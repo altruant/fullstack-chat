@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1'
-    'blooming-eyrie-60126.herokuapps.com'
+    'blooming-eyrie-60126.herokuapp.com'
 ]
 
 
