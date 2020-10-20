@@ -12,6 +12,8 @@ whitenoise = "*"
 dj-database-url = "~=0.5.0"
 psycopg2-binary = "~=2.8.6"
 django-rest-framework = "*"
+django-rest-auth = "*"
+django-allauth = "*"
 
 [requires]
 python_version = "3.8"

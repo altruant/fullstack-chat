@@ -39,9 +39,14 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
-
+    'rest_framework',
+    'rest_auth',
+    'allauth',
+    'allauth.account',
+    'rest_framework.authtoken',
     'accounts.apps.AccountsConfig',
     'frontend.apps.FrontendConfig',
 ]
