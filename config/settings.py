@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'accounts.apps.AccountsConfig',
     'frontend.apps.FrontendConfig',
+    'api.apps.ApiConfig'
 ]
 
 MIDDLEWARE = [
@@ -139,5 +140,5 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 REACT_APP_DIR = os.path.join(BASE_DIR, 'frontend/static')
 STATICFILES_DIRS = ( os.path.join(BASE_DIR, 'frontend/static/build/static'), )
 
-
+SITE_ID = 1 
 AUTH_USER_MODEL = 'accounts.User'
