@@ -48,8 +48,10 @@ INSTALLED_APPS = [
     'allauth.account',
     'rest_framework.authtoken',
     'accounts.apps.AccountsConfig',
+    'api.apps.ApiConfig',
+    'chats.apps.ChatsConfig',
     'frontend.apps.FrontendConfig',
-    'api.apps.ApiConfig'
+
 ]
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
