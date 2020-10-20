@@ -42,11 +42,14 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
+
     'rest_framework',
+    'rest_framework.authtoken',
     'rest_auth',
     'allauth',
     'allauth.account',
-    'rest_framework.authtoken',
+    'allauth.socialaccount',
+
     'accounts.apps.AccountsConfig',
     'api.apps.ApiConfig',
     'chats.apps.ChatsConfig',
@@ -153,3 +156,5 @@ STATICFILES_DIRS = ( os.path.join(BASE_DIR, 'frontend/static/build/static'), )
 
 SITE_ID = 1
 AUTH_USER_MODEL = 'accounts.User'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
